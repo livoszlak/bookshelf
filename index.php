@@ -1,14 +1,11 @@
 <?php
-require __DIR__ . "/database1.php";
+//require __DIR__ . "/database1.php";
 require __DIR__ . "/header.php";
 require __DIR__ . "/functions.php";
 
 $bookArray = getAllBooks();
 $sorting = $_POST["selected_values"] ?? null;
 $searching = $_POST["searching"] ?? null;
-
-
-
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($sorting)) {
